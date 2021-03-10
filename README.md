@@ -4,7 +4,7 @@ Text and textarea fields with a character counter for Laravel Nova.
 ### Installation
 You can require this package using composer:
 
-```composer require elevate-digital/nova-charcounted-fields```
+```composer require muetze42/nova-charcounted-fields```
 
 # Usage
 
