@@ -1,5 +1,5 @@
 <template>
-    <default-field :field="field" :errors="errors" :full-width-content="true">
+    <default-field :field="field" :errors="errors" :full-width-content="true" :show-help-text="showHelpText">
         <template slot="field">
             <div class="relative">
                 <textarea
@@ -10,11 +10,8 @@
                     v-model="value"
                     v-bind="extraAttributes"
                 ></textarea>
-
                 <charcounter :value="value" :max-chars="field.maxChars" :warning-threshold="field.warningAt"></charcounter>
-
             </div>
-
             <p v-if="hasError" class="my-2 text-danger">
                 {{ firstError }}
             </p>
